@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle, Globe2, Handshake, ShieldCheck, Truck, Building2, ArrowRight, Percent, Languages, LineChart, BadgeEuro, Timer } from "lucide-react";
-import Button from "@/components/Button";
+import Button from "../components/Button";
 
 const features = [
   { icon: <Timer className="w-6 h-6" />, title: "Time‑to‑market", text: "Reducimos tu entrada a España/UE de meses a semanas." },

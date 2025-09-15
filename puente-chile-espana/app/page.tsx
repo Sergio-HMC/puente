@@ -20,7 +20,12 @@ export default function Page() {
       <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 border-b border-slate-200/60">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Image src="/logos/logo_azul_principal.svg" alt="Latam Gate Europe" width={36} height={36} />
+            <Image
+  src="/logos/mark_bridge_azul_principal.svg"
+  alt="Latam Gate Europe"
+  width={28}
+  height={28}
+/>
             <span className="font-bold text-brand-prussian">Latam Gate Europe</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">

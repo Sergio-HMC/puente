@@ -190,7 +190,12 @@ export default function Page() {
       <footer className="py-10 border-t border-slate-200/70 bg-white">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
           <div className="flex items-center gap-2">
-            <Image src="/logos/logo_azul_principal.svg" alt="Latam Gate Europe" width={28} height={28} />
+            <Image
+  src="/logos/mark_bridge_azul_principal.svg"
+  alt="Latam Gate Europe"
+  width={28}
+  height={28}
+/>
             <span>Latam Gate Europe</span>
           </div>
           <div className="flex items-center gap-4">

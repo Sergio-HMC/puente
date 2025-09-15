@@ -1,15 +1,28 @@
 export const metadata = {
-  title: "Puente España ⇄ Chile",
-  description: "Aterrizaje legal‑fiscal, importación y representación comercial para entrar a España/UE.",
+  title: "Latam Gate Europe — Latam2EU",
+  description: "Puente de negocios entre Latinoamérica y Europa: aterrizaje legal-fiscal, importación y representación comercial.",
 };
 
-import "./../styles/globals.css";
+import "../styles/globals.css";
 import type { ReactNode } from "react";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es">
-      <body className="min-h-screen bg-gradient-to-b from-white to-slate-50">
+      <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.png" />
+
+        {/* Google Fonts Lato */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-screen bg-gradient-to-b from-white to-slate-50 font-sans">
         {children}
       </body>
     </html>

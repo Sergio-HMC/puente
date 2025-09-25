@@ -187,86 +187,93 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ======= PAQUETES / PRICING ======= */}
-      <section id="paquetes" className="section-muted">
-        <div className="container-lg py-14 md:py-20">
-          <h2 className="text-3xl font-bold text-brand-prussian text-center">
-            Paquetes y modelo de cobro
-          </h2>
-          <p className="text-slate-600 text-center mt-2">
-            Elige el nivel que necesitas hoy; puedes escalar cuando quieras.
-          </p>
+    {/* ======= PAQUETES / PRICING ======= */}
+<section id="paquetes" className="section-muted">
+  <div className="container-lg py-14 md:py-20">
+    <h2 className="text-3xl font-bold text-brand-prussian text-center">
+      Paquetes y modelo de cobro
+    </h2>
+    <p className="text-slate-600 text-center mt-2">
+      Elige el nivel que necesitas hoy; puedes escalar cuando quieras.
+    </p>
 
-          <div className="mt-10 grid md:grid-cols-3 gap-6">
-            {/* Pack Inicio */}
-            <div className="card p-6 flex flex-col">
-              <div className="text-sm text-slate-500">Pack Inicio</div>
-              <h3 className="text-2xl font-bold text-brand-prussian mt-1">
-                “Tu empresa en España”
-              </h3>
-              <div className="mt-3 text-3xl font-extrabold text-brand-prussian">
-                € 4.000 – 6.000
-              </div>
-              <ul className="mt-4 space-y-2 text-slate-700">
-                <li>Constitución de sociedad (CIF y registro).</li>
-                <li>Apertura de cuenta bancaria europea.</li>
-                <li>Dirección fiscal en España.</li>
-                <li>Página web corporativa básica.</li>
-                <li>Asesoría inicial legal y fiscal.</li>
-              </ul>
-              <a href="#contacto" className="btn btn-primary mt-6">
-                Empezar
-              </a>
-            </div>
-
-            {/* Pack Gestión */}
-            <div className="card p-6 flex flex-col border-2 border-brand-primary">
-              <div className="text-sm text-slate-500">Pack Gestión</div>
-              <h3 className="text-2xl font-bold text-brand-prussian mt-1">
-                “Operación legal y fiscal”
-              </h3>
-              <div className="mt-3 text-3xl font-extrabold text-brand-prussian">
-                € 800 – 1.200 / mes
-              </div>
-              <ul className="mt-4 space-y-2 text-slate-700">
-                <li>Administrador único en España.</li>
-                <li>Contabilidad mensual e impuestos.</li>
-                <li>Cumplimiento fiscal y legal.</li>
-                <li>Soporte remoto continuo.</li>
-              </ul>
-              <a href="#contacto" className="btn btn-primary mt-6">
-                Quiero delegar
-              </a>
-            </div>
-
-            {/* Pack Expansión */}
-            <div className="card p-6 flex flex-col">
-              <div className="text-sm text-slate-500">Pack Expansión</div>
-              <h3 className="text-2xl font-bold text-brand-prussian mt-1">
-                “Crecer en Europa”
-              </h3>
-              <div className="mt-3 text-3xl font-extrabold text-brand-prussian">
-                desde € 1.500 / mes
-              </div>
-              <ul className="mt-4 space-y-2 text-slate-700">
-                <li>Salas de reuniones y oficinas.</li>
-                <li>Transitarios y logística UE.</li>
-                <li>Desarrollo comercial y reuniones.</li>
-                <li>Marketing digital y crecimiento.</li>
-              </ul>
-              <div className="mt-4 text-sm text-slate-600">
-                <b>Variable por éxito:</b> 3–5% sobre ventas gestionadas o
-                10–15% sobre margen de clientes aportados. <br />
-                <b>Equity (opcional):</b> 5–10% en proyectos de alto potencial a
-                cambio de menores variables.
-              </div>
-              <a href="#contacto" className="btn btn-primary mt-6">
-                Quiero crecer
-              </a>
-            </div>
-          </div>
+    <div className="mt-10 grid md:grid-cols-3 gap-6 items-stretch">
+      {/* Pack Inicio */}
+      <div className="card p-6 flex flex-col h-full">
+        <div className="text-sm text-slate-500">Pack Inicio</div>
+        <h3 className="text-2xl font-bold text-brand-prussian mt-1">
+          “Tu empresa en España”
+        </h3>
+        <div className="mt-3 text-3xl font-extrabold text-brand-prussian">
+          € 4.000 – 6.000
         </div>
-      </section>
+
+        {/* Bloque de texto ocupa el espacio flexible */}
+        <ul className="mt-4 space-y-2 text-slate-700 flex-1">
+          <li>Constitución de sociedad (CIF y registro).</li>
+          <li>Apertura de cuenta bancaria europea.</li>
+          <li>Dirección fiscal en España.</li>
+          <li>Página web corporativa básica.</li>
+          <li>Asesoría inicial legal y fiscal.</li>
+        </ul>
+
+        {/* Botón pegado abajo */}
+        <a href="#contacto" className="btn btn-primary mt-6">
+          Empezar
+        </a>
+      </div>
+
+      {/* Pack Gestión */}
+      <div className="card p-6 flex flex-col h-full border-2 border-brand-primary">
+        <div className="text-sm text-slate-500">Pack Gestión</div>
+        <h3 className="text-2xl font-bold text-brand-prussian mt-1">
+          “Operación legal y fiscal”
+        </h3>
+        <div className="mt-3 text-3xl font-extrabold text-brand-prussian">
+          € 800 – 1.200 / mes
+        </div>
+
+        <ul className="mt-4 space-y-2 text-slate-700 flex-1">
+          <li>Administrador único en España.</li>
+          <li>Contabilidad mensual e impuestos.</li>
+          <li>Cumplimiento fiscal y legal.</li>
+          <li>Soporte remoto continuo.</li>
+        </ul>
+
+        <a href="#contacto" className="btn btn-primary mt-6">
+          Quiero delegar
+        </a>
+      </div>
+
+      {/* Pack Expansión */}
+      <div className="card p-6 flex flex-col h-full">
+        <div className="text-sm text-slate-500">Pack Expansión</div>
+        <h3 className="text-2xl font-bold text-brand-prussian mt-1">
+          “Crecer en Europa”
+        </h3>
+        <div className="mt-3 text-3xl font-extrabold text-brand-prussian">
+          desde € 1.500 / mes
+        </div>
+
+        <ul className="mt-4 space-y-2 text-slate-700">
+          <li>Salas de reuniones y oficinas.</li>
+          <li>Transitarios y logística UE.</li>
+          <li>Desarrollo comercial y reuniones.</li>
+          <li>Marketing digital y crecimiento.</li>
+        </ul>
+
+        <div className="mt-4 text-sm text-slate-600 flex-1">
+          <b>Variable por éxito:</b> 3–5% sobre ventas gestionadas o 10–15% sobre margen de clientes aportados. <br />
+          <b>Equity (opcional):</b> 5–10% en proyectos de alto potencial a cambio de menores variables.
+        </div>
+
+        <a href="#contacto" className="btn btn-primary mt-6">
+          Quiero crecer
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ======= CTA FINAL / CONTACTO ======= */}
       <section id="contacto" className="bg-white">

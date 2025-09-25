@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@tailwind base;@tailwind components;@tailwind utilities;
+.container-lg{@apply max-w-6xl mx-auto px-4}
+.btn{@apply inline-flex items-center justify-center rounded-2xl px-5 py-3 font-medium shadow-sm transition}
+.btn-primary{@apply bg-brand-primary text-white hover:opacity-90}
+.btn-outline{@apply border border-brand-primary text-brand-primary hover:bg-brand-cornsilk}
+.card{@apply bg-white rounded-2xl border border-slate-200 shadow-card}
+.section-muted{@apply bg-brand-steel/10}
+.badge{@apply inline-block rounded-full bg-brand-cornsilk text-brand-prussian px-3 py-1 text-xs}
+img{max-width:100%;height:auto}
